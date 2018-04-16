@@ -89,6 +89,14 @@ For development use:
     c:\> cd \path\to\requests-splash
     c:\> %VENV%\Scripts\pip install -e . ".[develop]" ".[testing]"
 
+Todo
+----
+
+- cookie
+- timeout
+- proxies
+- execute custom JavaScript in page context
+- HEAD, OPTION POST and PUT requests
 
 License
 -------
