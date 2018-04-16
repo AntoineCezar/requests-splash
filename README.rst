@@ -4,7 +4,29 @@ Requests Splash
 
 v0.1.0
 
-Splash headless browser adapter for Requests.
+`Splash`_ headless browser adapter for `Requests`_.
+
+.. _`Splash`: https://splash.readthedocs.io/
+.. _`Requests`: http://docs.python-requests.org/
+
+
+Quick Start
+-----------
+
+First run a splash instance:
+
+.. code:: shell
+
+    sudo docker run --rm --name=splash -p 8050:8050 scrapinghub/splash
+
+Then you can start your requests:
+
+.. code:: python
+
+    from requests_splash import Session
+
+    with Session() as session:
+        response = session.get('https://example.com')
 
 Install
 -------
